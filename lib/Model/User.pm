@@ -13,7 +13,7 @@ sub init
 sub reportSql
 {
 	my $self=shift;
-	return qq[SELECT firstName,lastName,address1,address2,city,state,country,zip,insertDate from $self->{table} ORDER BY $self->{orderBy}];
+	return qq[SELECT firstName,lastName,address1,address2,city,state,zip,country,insertDate from $self->{table} ORDER BY $self->{orderBy}];
 }
 
 

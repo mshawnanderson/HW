@@ -9,7 +9,7 @@ use HTML::Template;
 
 use Model::User;
 
-my @fields=qw(firstName lastName address1 address2 city state zip country);
+my @fields=qw(firstName lastName address1 city state zip country);
 my $cgi=new CGI;
 
 main();
