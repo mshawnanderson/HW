@@ -1,0 +1,33 @@
+<html>
+<head><title>Register</title>
+<link rel="stylesheet" type="text/css" href="/shawn/css/hw.css">
+<script language="javascript" src="/shawn/js/hw.js"></script>
+</head>
+<body>
+
+
+Please fill out the form below.
+<form id="regForm" action="/cgi-bin/register.pl" onSubmit="return checkData();" method="POST">
+<table border=0 cellspacing=8 cellpadding=5>
+<tr><td colspan=2>
+<span style="color:#ff0000;">
+<TMPL_VAR NAME=MSGBODY>
+</span>
+</td></tr>
+<TR><TD>First Name:<div class="req">*</div></td><TD> <input type="text" id="firstName" name="firstName" value="<TMPL_VAR NAME=FIRSTNAME>"></td></tr>
+<TR><TD>Last Name:<div class="req">*</div></td><TD> <input type="text" id="lastName" name="lastName" value="<TMPL_VAR NAME=LASTNAME>"></td></tr>
+<TR><TD>Address1:<div class="req">*</div></td><TD> <input type="text" id="address1" name="address1" value="<TMPL_VAR NAME=ADDRESS1>"></td></tr>
+<TR><TD>Address2:</td><TD><input type="text" id="address2" name="address2" value="<TMPL_VAR NAME=ADDRESS2>"></td></tr>
+<TR><TD>City:<div class="req">*</div></td><TD><input type="text" id="city" name="city" value="<TMPL_VAR NAME=CITY>"></td></tr>
+<TR><TD>State:<div class="req">*</div></td><TD><input type="text" id="state" name="state" value="<TMPL_VAR NAME=STATE>"></td></tr>
+<TR><TD>Zip:<div class="req">*</div><div class="small">(5 or 9 digits)</div></td><TD><input type="text" id="zip" name="zip" value="<TMPL_VAR NAME=ZIP>"></td></tr>
+<TR><TD>Country:<div class="req">*</div><div class="small">(US Only)</div></td><TD><input type="text" id="country" name="country" value="<TMPL_VAR NAME=COUNTRY>"></td></tr>
+
+<tr><Td colspan=2><BR><BR><div class="req">*</div> Denotes Required Field</td></tr>
+<tr><td colspan=2>
+<input type="submit" name="Submit" value="Register">
+</td></tr>
+</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,7 @@
+.header{background-color:#000045;color:#fff;font-size:14px;padding:12px;}
+.oddRow{background-color:#333366;color:#fff;font-size:14px;padding:12px;}
+.evenRow{background-color:#ccccff;color:#000045;font-size:14px;padding:12px;}
+
+.small {display:inline-block;font-size:11px;color:#999999}
+.req {display:inline-block;font-size:12px;color:#ff0000;padding-left:2px;padding-right:8px;vertical-align:top}
+

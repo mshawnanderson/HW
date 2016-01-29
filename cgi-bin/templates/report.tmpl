@@ -1,0 +1,24 @@
+<html>
+<head><title>Report</title>
+<style>
+.header{background-color:#000045;color:#fff;font-size:14px;padding:12px;}
+.oddRow{background-color:#333366;color:#fff;font-size:14px;padding:12px;}
+.evenRow{background-color:#ccccff;color:#000045;font-size:14px;padding:12px;}
+</style>
+</head>
+<body>
+
+
+<table border=0 cellspacing=1 cellpadding=12>
+<TR class="header">
+<TMPL_LOOP NAME="HEADERS"><TH><TMPL_VAR NAME="NAME"></TH></TMPL_LOOP>
+</TR>
+
+<TMPL_LOOP name="REPORTDATA">
+<TR class="<TMPL_VAR NAME="CLASS">Row">
+<TMPL_LOOP NAME="ROWDATA"><TD><TMPL_VAR NAME="VALUE"></td></TMPL_LOOP>
+</TR>
+</TMPL_LOOP>
+</TABLE>
+</body>
+</html>
